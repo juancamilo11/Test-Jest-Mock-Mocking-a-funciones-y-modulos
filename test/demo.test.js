@@ -1,15 +1,15 @@
-it("adds correctly", () => {
-    expect(1+1).toEqual(2);
+it('Adds correctly', () => {
+    expect(1 + 1).toEqual(2);
 });
 
-it("substracts correctly", () => {
-    expect(10-7).toEqual(3);
+it('Substracts correctly', () => {
+    expect(10 - 7).toEqual(3);
 });
 
-it("multiplies correctly", () => {
-    expect(10*15).toEqual(150);
+it('Multiplies correctly', () => {
+    expect(10 * 15).toEqual(150);
 });
 
-it("divides correctly", () => {
-    expect(15/3).toEqual(5);
+it('Divides correctly', () => {
+    expect(15 / 3).toEqual(5);
 });

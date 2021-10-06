@@ -3,10 +3,13 @@ import Users from '../src/users.js';
 
 jest.mock('axios');
 
-test('should fetch users', () => {
-    const users = [{name: 'Bob'},{name: 'Ana'},{name:'Michael'}];
+test('Should fetch users', () => {
+    const users = [{name: 'Bob'}];
     const resp = {data: users};
     axios.get.mockResolvedValue(resp);
 
-    return Users.all().then(data => expect(data).toEqual(users));
+    return Users
+        .all()
+        .then(data => expect(data).toEqual(users));
 });
+

@@ -1,7 +1,7 @@
-import * as app from "../src/app.js";
+import * as app from "../src/App.js";
 import * as math from "../src/math.js";
 
-test("calls math.add method", () => {
+test("Calls math.add method", () => {
 
     //Store the original implementation
     const originalAdd = math.add;
@@ -14,8 +14,8 @@ test("calls math.add method", () => {
     expect(math.add).toHaveBeenCalledWith(1, 2);
 
     //Override the implementation
-    math.add.mockImplementation(() => "mock");
-    expect(app.doAdd(1, 2)).toEqual("mock");
+    math.add.mockImplementation(() => 'mock');
+    expect(app.doAdd(1, 2)).toEqual('mock');
     expect(math.add).toHaveBeenCalledWith(1, 2);
 
     //Restore the original implementation
